@@ -1,0 +1,35 @@
+1)Entity Layer
+Entities are the bridge between your Java app and the database.
+
+Instead of writing raw SQL, you can work with Java objects.
+
+Spring (with JPA) automatically handles the database:
+
+When you save an entity, it writes to the database.
+
+When you fetch an entity, it reads from the database.
+
+
+
+2)Repository Layer
+The repository layer interacts with the database and performs CRUD (Create, Read, Update, Delete) operations on your entities. In Spring Boot, you can use Spring Data JPA to create the repository interfaces.
+
+Steps:
+Create a new package repository (or repositories).
+
+Create an interface for each of your entities, extending JpaRepository.
+
+
+3)service layer
+The Service Layer contains the business logic of your application. This layer handles the requests and orchestrates the calls between your repositories and controllers.
+
+Create a service package.
+
+Create service classes for each entity.
+
+4) controller Layer
+The Controller Layer will expose RESTful APIs to the client (frontend or Postman). Here, you will create endpoints that the frontend can interact with.
+
+Create a controller package.
+
+Create REST controller classes for each entity.
