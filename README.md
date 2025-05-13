@@ -1,48 +1,59 @@
-🛒 Supermarket POS System
-A full-stack Point of Sale (POS) web application for managing supermarket operations efficiently. Built with Java Spring Boot, MySQL, Thymeleaf, and JWT-based authentication, the system supports role-based access, inventory control, and user purchase management.
+# 🛒 Supermarket POS System
 
-🔐 Features
-JWT Authentication with login, register, and password reset
+A full-stack **Point of Sale (POS)** web application for managing supermarket operations efficiently. Built with **Java Spring Boot**, **MySQL**, **Thymeleaf**, and **JWT-based authentication**, the system supports **role-based access**, **inventory control**, and **user purchase management**.
 
-Role-based access:
+---
 
-🧑‍💼 Admin Dashboard:
+## 🔐 Features
 
-Add / edit / delete products
+### 👤 Authentication
+- JWT-based login and token validation
+- Secure user registration
+- Password change/reset functionality
 
-Track inventory levels
+### 🧑‍💼 Admin Dashboard
+- Add / edit / delete products
+- Set cost and selling prices
+- Track inventory levels
+- Low-stock and out-of-stock notifications
+- View all user purchases
+- Search purchases by username
+- Delete user purchases
+- Admin password reset for users
 
-See low/out-of-stock notifications
+### 🛍️ User Panel
+- Select items and quantity
+- Auto-calculate item and total price
+- Generate purchase receipt with user details
 
-View user purchases and sales statistics
+---
 
-Register new users and reset passwords
+## 🧰 Tech Stack
 
-🛍️ User Panel:
+- **Backend**: Java 23, Spring Boot, Spring Security, Spring Data JPA
+- **Frontend**: Thymeleaf, Bootstrap
+- **Database**: MySQL (XAMPP)
+- **Other Tools**: IntelliJ IDEA, Postman, Maven
 
-Select items and quantities
+---
 
-Calculate prices and generate receipts
+## 📊 Admin Features Snapshot
+- Inventory and product management
+- User management and password resets
+- Dashboard statistics (monthly/total sales, user activity)
 
-🧰 Tech Stack
-Backend: Spring Boot (Java 23), Spring Security, JPA
+## ✅ User Features Snapshot
+- Purchase system with dynamic pricing
+- Receipt generation per user
+- Secure and responsive interface
 
-Frontend: Thymeleaf + Bootstrap
+---
 
-Database: MySQL
+## 🚀 Getting Started
 
-Tools: IntelliJ IDEA, Postman, Maven
+```bash
+# Clone the repository
+git clone https://github.com/venomiteh/Supermarket-POS.git
 
-📊 Admin Features
-Inventory and product management
-
-Sales and purchase statistics
-
-User management and purchase tracking
-
-✅ User Features
-Purchase system with receipt generation
-
-Real-time price calculation
-
-Role-based redirection post-login
+# Open in IntelliJ and run the Spring Boot application
+# Access via browser or test endpoints via Postman
